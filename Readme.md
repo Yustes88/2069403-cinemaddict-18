@@ -1,7 +1,7 @@
 # Проект «Киноман»
 
 * Студент: [Обручкова Юлия](https://up.htmlacademy.ru/ecmascript/18/user/2069403).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
