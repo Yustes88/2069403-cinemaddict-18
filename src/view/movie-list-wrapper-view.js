@@ -8,7 +8,7 @@ const createFilterTemplate = () => (
   `
 );
 
-export default class MoviesListWrapperView {
+export default class MovieListWrapperView {
   getTemplate() {
     return createFilterTemplate();
   }

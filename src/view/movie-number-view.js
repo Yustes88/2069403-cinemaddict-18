@@ -6,7 +6,7 @@ const createFilterTemplate = () => (
   `
 );
 
-export default class MovieNumber {
+export default class MovieNumberView {
   getTemplate() {
     return createFilterTemplate();
   }

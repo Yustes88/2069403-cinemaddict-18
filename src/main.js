@@ -1,7 +1,6 @@
 import { render } from './render.js';
-import MovieNumber from './view/movie-number-view.js';
-import FilterView from './view/filter-view.js';
-import NavigationView from './view/nav-view.js';
+import MovieNumberView from './view/movie-number-view.js';
+import NavigationView from './view/navigation-view.js';
 import ContentPresenter from './presenter/board-presenter.js';
 import UserView from './view/user-view.js';
 
@@ -12,7 +11,6 @@ const contentPresenter = new ContentPresenter();
 
 render(new UserView(), siteHeaderElement);
 render(new NavigationView(), siteMainElement);
-render(new MovieNumber(), footerStatisticElement);
-render(new FilterView(), siteMainElement);
+render(new MovieNumberView(), footerStatisticElement);
 
 contentPresenter.init(siteMainElement);

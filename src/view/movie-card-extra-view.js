@@ -24,7 +24,7 @@ const createFilterTemplate = () => (
   `
 );
 
-export default class MovieExtraCardView {
+export default class MovieCardExtraView {
   getTemplate() {
     return createFilterTemplate();
   }
