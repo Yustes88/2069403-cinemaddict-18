@@ -1,4 +1,5 @@
 import { getRandomInteger } from '../utile.js';
+import { generateComment } from './comment.js';
 
 const movieDictionary = {
   movies: {
@@ -23,6 +24,8 @@ const generateDescriptions = (description) => {
   return description[descriptionItem];
 };
 
+const createComments = (number) => Array.from({length: number}, (_, i) => generateComment(i));
+
 export const generateMovie = () => {
   const moviesTitle = generateTitles(movieDictionary.movies);
   const moviesPosters = movieDictionary.movies[moviesTitle];
@@ -30,9 +33,7 @@ export const generateMovie = () => {
 
   return {
     'id': '0',
-    // 'comments': [
-    // $Comment.id$, $Comment.id$
-    // ],
+    comments: createComments(getRandomInteger(1, 5)),
     'film_info': {
       'title': moviesTitle,
       'alternative_title': 'Laziness Who Sold Themselves',
