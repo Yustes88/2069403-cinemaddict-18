@@ -1,7 +1,7 @@
 import { createElement } from '../render.js';
 
 
-const createFilterTemplate = () => (
+const createMovieListTemplate = () => (
   `<div class="films-list__container">
   </div>
   `
@@ -9,7 +9,7 @@ const createFilterTemplate = () => (
 
 export default class MovieListView {
   getTemplate() {
-    return createFilterTemplate();
+    return createMovieListTemplate();
   }
 
   getElement() {

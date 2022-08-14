@@ -1,7 +1,7 @@
 import { createElement } from '../render.js';
 
 
-const createFilterTemplate = () => (
+const createContentTemplate = () => (
   `<section class="films">
   </section>
   `
@@ -9,7 +9,7 @@ const createFilterTemplate = () => (
 
 export default class ContentView {
   getTemplate() {
-    return createFilterTemplate();
+    return createContentTemplate();
   }
 
   getElement() {

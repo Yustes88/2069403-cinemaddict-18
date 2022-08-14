@@ -1,14 +1,14 @@
 import { createElement } from '../render.js';
 
 
-const createFilterTemplate = () => (
+const createMovieNumberTemplate = () => (
   `<p>130 291 movies inside</p>
   `
 );
 
 export default class MovieNumberView {
   getTemplate() {
-    return createFilterTemplate();
+    return createMovieNumberTemplate();
   }
 
   getElement() {
